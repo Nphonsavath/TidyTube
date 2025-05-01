@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TidyTube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TidyTube</h1>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="subscriptions">Subscriptions</button>
+                <button class="tab-btn" data-tab="discover">Discover</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Subscriptions Tab -->
+            <div class="tab-content active" id="subscriptions">
+                <div class="folder-container">
+                    <div class="folders">
+                        <!-- Folders will be dynamically added here -->
+                    </div>
+                    <button id="new-folder" class="btn-primary">+ New Folder</button>
+                </div>
+            </div>
+
+            <!-- Discover Tab -->
+            <div class="tab-content" id="discover">
+                <div class="discover-categories">
+                    <!-- Categories will be dynamically added here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 
